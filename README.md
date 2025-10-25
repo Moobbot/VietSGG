@@ -3,12 +3,31 @@
 **VietSGG** is the **first benchmark dataset for Vietnamese Scene Graph Generation (SGG)**.  
 It extends the **UIT-ViIC** image corpus with dense object and relationship annotations aligned to a **standardized Vietnamese ontology**.
 
-📄 **Accepted at EAI GOODTECHS 2025**  
+License: CC BY 4.0  
+Citation: Ngo Duc Tam et al., "VietSGG: A Benchmark Dataset and Baseline Models for Vietnamese Scene Graph Generation", GOODTECHS 2025.
+
+📄 **Accepted at EAI GOODTECHS 2025**
+
 > Ngo Duc Tam, Tran Thi Ngan, Tran Manh Tuan, Pham Minh Duc, Nguyen Duc Quang Anh.  
-> *VietSGG: A Benchmark Dataset and Baseline Models for Vietnamese Scene Graph Generation.*  
+> _VietSGG: A Benchmark Dataset and Baseline Models for Vietnamese Scene Graph Generation._  
 > In Proceedings of the **EAI International Conference on Smart Objects and Technologies for Social Good (GOODTECHS 2025)**.  
 > [https://goodtechs.eai-conferences.org/2025/](https://goodtechs.eai-conferences.org/2025/)
 
+---
+
+## Description
+
+VietSGG is the first benchmark dataset for Vietnamese Scene Graph Generation (SGG), built upon UIT-ViIC sports-centric images.  
+It introduces a standardized Vietnamese ontology robust to word segmentation and diacritic variation, along with normalization and label-mapping tools.  
+A modular annotation pipeline combining **Grounding DINO** and **GPT-4** is provided for generating Vietnamese scene graphs.  
+Benchmark results are reported for representative transformer-based SGG models (**RelTR**, **EGTR**, **SGTR**) trained under the Vietnamese ontology.
+
+## Contents
+
+- JSON annotations for objects and relationships
+- Bilingual (Vietnamese–English) label ontologies
+- Normalization and post-processing scripts
+- Evaluation examples and visualization utilities
 
 ---
 
@@ -77,7 +96,8 @@ If you use a custom folder structure, update the input/output paths in the scrip
 ---
 
 ## **4. Running VietSGG**
-After preparing the dataset, you can now run VietSGG pipelines VietSGG.ipynb
+
+After preparing the dataset, open VietSGG.ipynb to run the VietSGG pipelines
 
 ---
 
@@ -91,23 +111,7 @@ After preparing the dataset, you can now run VietSGG pipelines VietSGG.ipynb
 
 ---
 
-## **6. Citation**
-
-If you use **VietSGG** in your research, please cite:
-
-```bibtex
-@inproceedings{ngo2025vietsgg,
-  title     = {VietSGG: A Benchmark Dataset and Baseline Models for Vietnamese Scene Graph Generation},
-  author    = {Ngo, Duc Tam and Tran, Thi Ngan and Tran, Manh Tuan and Pham, Minh Duc and Nguyen, Duc Quang Anh},
-  booktitle = {Proceedings of the International Conference on Computer Science and Information Technology (ICSIT)},
-  year      = {2025},
-  note      = {Vietnam National University, Hanoi}
-}
-```
-
----
-
-## **7. Repository Structure**
+## **6. Repository Structure**
 
 ```
 .
@@ -125,7 +129,7 @@ If you use **VietSGG** in your research, please cite:
 
 ---
 
-## **8. License and Availability**
+## **7. License and Availability**
 
-- VietSGG will be released for **research and educational use only** under a permissive license.
-- Repository: [https://github.com/Moobbot/VietSSG](https://github.com/Moobbot/VietSSG)
+- Released under **Creative Commons Attribution 4.0 (CC BY 4.0)**.
+- Repository: [https://github.com/Moobbot/VietSGG](https://github.com/Moobbot/VietSGG)
